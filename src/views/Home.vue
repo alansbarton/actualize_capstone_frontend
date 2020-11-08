@@ -3,7 +3,7 @@
     <h1>Users</h1>
     <div v-for="user in users">
       <h3>{{ user.name }}</h3>
-      <img v-bind:src="user.images">
+      <img v-bind:src="user.images.image_url">
       <p>Climbing experiance: {{ user.years_experiance }} years</p>
       <p>skill level: {{ user.font_scale }} and {{ user.victor_scale }}</p>
       <p>area: {{ user.location }}</p>

@@ -8,7 +8,8 @@
         <!-- <p v-for="climbing_style in climbing_styles">{{ climbing_style.name }}</p> -->
       <p>area: {{ user.location }}</p>
       <p>{{ user.description }}</p>
-      <router-link to="/messages">message</router-link>
+      <router-link v-bind:to="`/messages/${user.id}`">message</router-link> | 
+      <router-link v-bind:to="`/`">All users</router-link>
     </div>
   </div>
 </template>

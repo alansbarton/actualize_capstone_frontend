@@ -18,7 +18,7 @@ const routes = [
   { path: "/login", name: "login", component: Login },
   { path: "/logout", name: "logout", component: Logout },
   { path: "/users/:id", name: "users-show", component: UsersShow},
-  { path: "/messages", name: "messages-index", component: MessagesIndex},
+  { path: "/messages/:id", name: "messages-index", component: MessagesIndex},
 ];
 
 const router = new VueRouter({

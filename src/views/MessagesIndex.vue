@@ -7,8 +7,8 @@
     </div>
     <h1>All Messages</h1>
     <div v-for="message in messages">
-      <p><strong>{{ message.name }}</strong> : {{ message.created_at }}</p>
-      <p>{{ message.body }}</p>
+      <p><strong>{{ message.sender_id }}</strong> : {{ message.created_at }}</p>
+      <p>{{ message.message }}</p>
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
     };
   },
   created: function() {
-    this.createMessage();
+    this.indexMessages();
 
     var cable = ActionCable.createConsumer("ws://localhost:3000/cable");
 
@@ -43,17 +43,27 @@ export default {
       received: data => {
         // Called when there's incoming data on the websocket for this channel
         console.log("Data from MessagesChannel:", data);
+        // todo: Fix web sockets
         this.messages.unshift(data); // update the messages in real time
       }
     });
   },
 
   methods: {
+    indexMessages: function() {
+      axios.get("/api/messages/" + this.$route.params.id).then(response => {
+        console.log("messages index", response);
+        this.messages = response.data;
+      });
+    },
     createMessage: function() {
       var params = {
-        body: this.newMessageBody
+        message: this.newMessageBody,
+        receiver_id: this.$route.params.id,
+
+
       };
-      axios.get("/api/messages", params).then(response => {
+      axios.post("/api/messages/" + this.$route.params.id, params).then(response => {
         console.log("messages index", response);
         this.newMessageBody = "";
       });
