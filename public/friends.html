@@ -1,13 +1,45 @@
-<template>
-  <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/signup">Signup</router-link> |
-      <router-link to="/login">Login</router-link> |
-      <router-link to="/logout">Logout</router-link>
-    </div> -->
-    
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<!-- Mirrored from demo.hasthemes.com/adda-preview/adda/friends.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Nov 2020 21:21:56 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Adda - Social Network HTML Template</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- CSS
+	============================================ -->
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bicon.min.css">
+    <!-- Flat Icon CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/flaticon.css">
+    <!-- audio & video player CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/plyr.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
+    <!-- nice-select CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <!-- perfect scrollbar css -->
+    <link rel="stylesheet" href="assets/css/plugins/perfect-scrollbar.css">
+    <!-- light gallery css -->
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
     <!-- header area start -->
     <header>
         <div class="header-top sticky bg-white d-none d-lg-block">
@@ -18,7 +50,7 @@
                         <div class="header-top-navigation">
                             <nav>
                                 <ul>
-                                    <li class="active"><a href="/">Home</a></li>
+                                    <li class="active"><a href="index.html">home</a></li>
                                     <li class="msg-trigger"><a class="msg-trigger-btn" href="#a">message</a>
                                         <div class="message-dropdown" id="a">
                                             <div class="dropdown-title">
@@ -40,7 +72,7 @@
 
                                                     <!-- message content start -->
                                                     <div class="msg-content">
-                                                        <h6 class="author"><a href="/user/1">Mili Raoulin</a></h6>
+                                                        <h6 class="author"><a href="profile.html">Mili Raoulin</a></h6>
                                                         <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                                                     </div>
                                                     <!-- message content end -->
@@ -249,7 +281,6 @@
         </div>
     </header>
     <!-- header area end -->
-
     <!-- header area start -->
     <header>
         <div class="mobile-header-wrapper sticky d-block d-lg-none">
@@ -431,11 +462,831 @@
     </header>
     <!-- header area end -->
 
-    <router-view/>
+    <main>
 
+        <div class="main-wrapper">
+            <!-- profile banner area start -->
+            <div class="profile-banner-large bg-img" data-bg="assets/images/banner/profile-banner.jpg">
+            </div>
+            <!-- profile banner area end -->
+
+            <!-- profile menu area start -->
+            <div class="profile-menu-area secondary-navigation-style bg-white">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="profile-picture-box">
+                                <figure class="profile-picture">
+                                    <a href="#">
+                                        <img src="assets/images/profile/profile-1.jpg" alt="profile picture">
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 offset-lg-1">
+                            <div class="profile-menu-wrapper">
+                                <div class="main-menu-inner header-top-navigation">
+                                    <nav>
+                                        <ul class="main-menu">
+                                            <li class="active"><a href="#">timeline</a></li>
+                                            <li><a href="about.html">about</a></li>
+                                            <li><a href="photos.html">photos</a></li>
+                                            <li><a href="friends.html">friends</a></li>
+                                            <li><a href="about.html">more</a></li>
+                                            <!-- <li class="d-inline-block d-md-none"><a href="profile.html">edit profile</a></li> -->
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 d-none d-md-block">
+                            <div class="profile-edit-panel">
+                                <button class="edit-btn">edit profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- profile menu area end -->
+
+            <!-- sendary menu start -->
+            <div class="menu-secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="secondary-menu-wrapper secondary-menu-2 bg-white">
+                                <div class="page-title-inner">
+                                    <h4 class="page-title">friends (1250)</h4>
+                                </div>
+                                <div class="filter-menu">
+                                    <button class="active" data-filter="*">all</button>
+                                    <button data-filter=".recently">recently</button>
+                                    <button data-filter=".relative">relative</button>
+                                    <button data-filter=".collage">collage</button>
+                                    <button data-filter=".request">request</button>
+                                </div>
+                                <div class="post-settings-bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <div class="post-settings arrow-shape">
+                                        <ul>
+                                            <li><button>edit profile</button></li>
+                                            <li><button>activity log</button></li>
+                                            <li><button>embed adda</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sendary menu end -->
+
+            <!-- photo section start -->
+            <div class="friends-section mt-20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="content-box friends-zone">
+                                <div class="row mt--20 friends-list">
+                                    <div class="col-lg-3 col-sm-6 recently request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-1.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Kate Midiltoin</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Jon Wileyam</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently collage request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-7.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william henry</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-22.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Kate Midiltoin</a></h6>
+                                                <button class="add-frnd">friend request sent</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-10.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Omio Morganik</a></h6>
+                                                <button class="add-frnd">friend request sent</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-13.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william henry</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 collage request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-18.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">erik jonson</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-25.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">peter looks</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-16.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">jhon doe</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-12.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william henry</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-9.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william henry</a></h6>
+                                                <button class="add-frnd">friend request sent</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-17.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">musa kollins</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-11.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">petter jhon</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 request collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-20.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">henry william</a></h6>
+                                                <button class="add-frnd">friend request sent</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently relative">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-32.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">cristian paul</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative collage request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-31.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">willson merry</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 request recently">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-29.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">jhonsina boss</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-26.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william jowel</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-19.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">ashim pual</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-23.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Barak Obama</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-1.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Kate Midiltoin</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Jon Wileyam</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently collage request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-7.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william henry</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-22.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Kate Midiltoin</a></h6>
+                                                <button class="add-frnd">friend request sent</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-10.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Omio Morganik</a></h6>
+                                                <button class="add-frnd">friend request sent</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-13.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william henry</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 collage request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-18.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">erik jonson</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-25.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">peter looks</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-16.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">jhon doe</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-12.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william henry</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-9.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william henry</a></h6>
+                                                <button class="add-frnd">friend request sent</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-17.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">musa kollins</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-11.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">petter jhon</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 request collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-20.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">henry william</a></h6>
+                                                <button class="add-frnd">friend request sent</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently relative">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-32.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">cristian paul</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative collage request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-31.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">willson merry</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 request recently">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-29.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">jhonsina boss</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-26.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">william jowel</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 relative collage">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-19.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">ashim pual</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 recently request">
+                                        <div class="friend-list-view">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-middle">
+                                                        <img src="assets/images/profile/profile-small-23.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="posted-author">
+                                                <h6 class="author"><a href="profile.html">Barak Obama</a></h6>
+                                                <button class="add-frnd">add friend</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- photo section end -->
+        </div>
+
+    </main>
+
+    <!-- Scroll to top start -->
     <div class="scroll-top not-visible">
-      <i class="bi bi-finger-index"></i>
+        <i class="bi bi-finger-index"></i>
     </div>
+    <!-- Scroll to Top End -->
 
     <!-- footer area start -->
     <footer class="d-none d-lg-block">
@@ -818,7 +1669,6 @@
         </div>
     </footer>
     <!-- footer area end -->
-
     <!-- footer area start -->
     <footer class="d-block d-lg-none">
         <div class="footer-area reveal-footer">
@@ -930,223 +1780,37 @@
         </div>
     </footer>
     <!-- footer area end -->
-  </div>
-</template>
 
-<style>
-</style>
+    <!-- JS
+============================================ -->
 
-<script>
-export default {
-  mounted: function() {
-    (function ($) {
-	"use strict";
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <!-- nice select JS -->
+    <script src="assets/js/plugins/nice-select.min.js"></script>
+    <!-- audio video player JS -->
+    <script src="assets/js/plugins/plyr.min.js"></script>
+    <!-- perfect scrollbar js -->
+    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <!-- light gallery js -->
+    <script src="assets/js/plugins/lightgallery-all.min.js"></script>
+    <!-- image loaded js -->
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <!-- isotope filter js -->
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 
-	$(".msg-trigger-btn").on("click", function (event) {
-		event.stopPropagation();
-		event.preventDefault();
-		var $this = $(this);
-		var $prevTartget = $(this).parent().siblings().children(".msg-trigger-btn").attr('href');
-		var target = $this.attr('href');
-		$(target).slideToggle();
-		$($prevTartget).slideUp();
-		
-    });
-
-	//Close When Click Outside
-	$('body').on('click', function(e){
-		var $target = e.target;
-		if (!$($target).is('.message-dropdown') && !$($target).parents().is('.message-dropdown')) {
-			$(".message-dropdown").slideUp("slow");
-		}
-	});
-
-	//Background Image JS start
-	var bgSelector = $(".bg-img");
-	bgSelector.each(function (index, elem) {
-		var element = $(elem),
-			bgSource = element.data('bg');
-		element.css('background-image', 'url(' + bgSource + ')');
-	});
-
-    // video player active js
-	var plyrVideo = new Plyr('.plyr-video'),
-      	plyrAudio = new Plyr('.plyr-audio'),
-      	plyrYoutube = new Plyr('.plyr-youtube'),
-		plyrVimeo = new Plyr('.plyr-vimeo');
-		  
-    // active profile carousel js
-	$('.active-profile-carousel').slick({
-        speed: 800,
-        slidesToShow: 10,
-		prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-arrow-left-rounded"></i></button>',
-		nextArrow: '<button type="button" class="slick-next"><i class="bi bi-arrow-right-rounded"></i></button>',
-		responsive: [{
-			breakpoint: 1200,
-			settings: {
-				slidesToShow: 5,
-			}
-		},
-		{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 8,
-			}
-		}]
-	});
-
-	// active profile carousel js
-	$('.active-profile-mobile').slick({
-        speed: 800,
-		slidesToShow: 6,
-		arrows: false,
-		responsive: [{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 4,
-			}
-		}]
-	});
-
-	// active profile carousel js
-	$('.favorite-item-carousel').slick({
-		autoplay: true,
-        speed: 800,
-		slidesToShow: 5,
-		arrows: false,
-		responsive: [{
-			breakpoint: 992,
-			settings: {
-				slidesToShow: 3,
-			}
-		},
-		{
-			breakpoint: 576,
-			settings: {
-				slidesToShow: 2,
-			}
-		}]
-	});
-
-	// live chat box and friend search box active js
-	$(".profile-active").on('click', function(){
-		$(".chat-output-box").addClass('show');
-	})
-	$(".search-field").on('click', function(){
-		$(".friend-search-list").addClass('show');
-	})
-	$(".close-btn").on('click', function(){
-		var $this = $(this),
-			$target = $this.data('close');
-		$('.'+$target).removeClass('show');
-	})
-	
-	// mobile header seach box active
-	$(".search-trigger").on('click', function(){
-		$('.search-trigger, .mob-search-box').toggleClass('show');
-	})
-	
-	$(".chat-trigger, .close-btn").on('click', function(){
-		$('.mobile-chat-box').toggleClass('show');
-	})
-	$(".request-trigger").on('click', function(){
-		$('.frnd-request-list').toggleClass('show');
-	})
-
-	// mobile friend search active js
-	$(".search-toggle-btn").on('click', function(){
-		$('.mob-frnd-search-inner').toggleClass('show');
-	})
-
-	// profile dropdown triger js
-	$('.profile-triger').on('click', function(event){
-		event.stopPropagation();
-        $(".profile-dropdown").slideToggle();
-	})
-
-	//Close When Click Outside
-	$('body').on('click', function(e){
-		var $target = e.target;
-		if (!$($target).is('.profile-dropdown') && !$($target).parents().is('.profile-dropdown')) {
-			$(".profile-dropdown").slideUp("slow");
-		}
-	});
-
-	// perfect scroll bar js
-	$('.custom-scroll').each(function(){
-		var ps = new PerfectScrollbar($(this)[0]);
-	});
+</body>
 
 
-	// light gallery active js
-	$(document).ready(function() {
-        $(".img-popup").lightGallery(); 
-
-		// light gallery images
-        $(".img-gallery").lightGallery({
-			selector: ".gallery-selector",
-			hash: false
-		}); 
-	});
-
-	$('.gallery-toggle').on('click', function () {
-
-	var productThumb = $(this).find(".product-thumb-large-view img"),
-			imageSrcLength = productThumb.length,
-			images = [];
-		for (var i = 0; i < imageSrcLength; i++) {
-			images[i] = {"src": productThumb[i].src, "thumb": productThumb[i].src};
-		}
-
-		$(this).lightGallery({
-			dynamic: true,
-			actualSize: false,
-			hash: false,
-			index: 0,
-			dynamicEl: images
-		});
-
-	});
-
-	// photo filter active js
-	$('.photo-filter').imagesLoaded( function() {
-		var $grid = $('.photo-filter, .friends-list').isotope({
-		});
-		// filter items on button click
-		$('.filter-menu').on( 'click', 'button', function() {
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({ filter: filterValue });
-			$(this).siblings('.active').removeClass('active');
-	         $(this).addClass('active');
-		});
-		
-	});
-
-	// nice select active js
-	$('select').niceSelect();
-
-	// Scroll to top active js
-	$(window).on('scroll', function () {
-		if ($(this).scrollTop() > 600) {
-			$('.scroll-top').removeClass('not-visible');
-		} else {
-			$('.scroll-top').addClass('not-visible');
-		}
-	});
-	$('.scroll-top').on('click', function (event) {
-		$('html,body').animate({
-			scrollTop: 0
-		}, 1000);
-	});
-
-
-	$('#email').bind("cut copy paste",function(e) {
-		e.preventDefault();
-	});
-    
-})(jQuery);
-
-
-  }
-}
-</script>
+<!-- Mirrored from demo.hasthemes.com/adda-preview/adda/friends.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Nov 2020 21:21:56 GMT -->
+</html>
