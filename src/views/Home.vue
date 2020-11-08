@@ -11,7 +11,7 @@
       <router-link v-bind:to="`/users/${user.id}`">More details</router-link>
     </div> -->
     <main>
-
+<div v-for="user in users">
         <div class="main-wrapper pt-80">
             <div class="container">
                 <div class="row">
@@ -25,12 +25,12 @@
                                             <img src="assets/images/banner/banner-small.jpg" alt="">
                                         </a>
                                         <a href="profile.html" class="profile-thumb-2">
-                                            <img src="assets/images/profile/profile-midle-1.jpg" alt="">
+                                            <img v-bind:src="user.images.image_url" alt="">
                                         </a>
                                     </figure>
                                     <div class="profile-desc text-center">
-                                        <h6 class="author"><a href="profile.html">Dimbel Lebmid</a></h6>
-                                        <p>Any one can join with but Social network us if you want Any one can join with us if you want</p>
+                                        <h6 class="author"><a href="profile.html">{{user.name}}</a></h6>
+                                        <p>{{user.description}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +226,7 @@
                                 <div class="profile-thumb">
                                     <a href="#">
                                         <figure class="profile-thumb-middle">
-                                            <img src="assets/images/profile/profile-small-37.jpg" alt="profile picture">
+                                            <img v-bind:src="user.images.image_url" alt="profile picture">
                                         </figure>
                                     </a>
                                 </div>
@@ -1049,7 +1049,7 @@
                 </div>
             </div>
         </div>
-
+</div>
     </main>
   </div>
 </template>
