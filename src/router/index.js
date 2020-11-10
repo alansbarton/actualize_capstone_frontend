@@ -12,10 +12,10 @@ import MessagesIndex from "../views/MessagesIndex.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
+  { path: '/home', name: 'Home', component: Home },
   { path: '/about', name: 'About', component: About },
   { path: "/signup", name: "signup", component: Signup },
-  { path: "/login", name: "login", component: Login },
+  { path: "/", name: "login", component: Login, meta: {header: 0, footer: 0} },
   { path: "/logout", name: "logout", component: Logout },
   { path: "/users/:id", name: "users-show", component: UsersShow},
   { path: "/messages/:id", name: "messages-index", component: MessagesIndex},
