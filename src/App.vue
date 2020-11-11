@@ -350,11 +350,13 @@
                                 </div>
                                 <div class="message-list-inner">
                                     <ul class="message-list custom-scroll">
+                                      <!-- <div v-for="message in messages">
                                         <li class="text-friends">
-                                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p>
+                                            <p>{{message.message}}</p>
                                             <div class="message-time">10 minute ago</div>
                                         </li>
-                                        <li class="text-author">
+                                      </div> -->
+                                        <!-- <li class="text-author">
                                             <p>Many desktop publishing packages and web page editors</p>
                                             <div class="message-time">5 minute ago</div>
                                         </li>
@@ -373,12 +375,12 @@
                                         <li class="text-friends">
                                             <p>packages and web page editors </p>
                                             <div class="message-time">2 minute ago</div>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                                 <div class="chat-text-field mob-text-box">
                                     <textarea class="live-chat-field custom-scroll" placeholder="Text Message"></textarea>
-                                    <button class="chat-message-send" type="submit" value="submit">
+                                    <button class="chat-message-send" type="submit" value="submit" v-on:click="createMessage()">
                                         <img src="assets/images/icons/plane.png" alt="">
                                     </button>
                                 </div>
@@ -437,7 +439,7 @@
       <i class="bi bi-finger-index"></i>
     </div>
 
-    <!-- footer area start -->
+    <!-- footer area start Search footer-->
     <footer v-if="$route.meta.footer != 0" class="d-none d-lg-block">
         <div class="footer-area reveal-footer">
             <div class="container-fluid">
@@ -593,157 +595,13 @@
                             </div>
                             <div class="card card-small mb-0 active-profile-wrapper">
                                 <div class="active-profiles-wrapper">
-                                    <div class="active-profile-carousel slick-row-20 slick-arrow-style">
+                                    <div class="active-profile-carousel slick-row-20 slick-arrow-style" v-for="user in users">
                                         <!-- profile picture end -->
                                         <div class="single-slide">
                                             <div class="profile-thumb active profile-active">
                                                 <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-1.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-1.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-2.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-1.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-6.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-7.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-8.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-9.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-10.jpg" alt="profile picture">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <!-- profile picture end -->
-                                        <div class="single-slide">
-                                            <div class="profile-thumb active profile-active">
-                                                <a href="javascript:void(0)">
-                                                    <figure class="profile-thumb-small">
-                                                        <img src="assets/images/profile/profile-small-11.jpg" alt="profile picture">
+                                                        <img v-bind:src="user.images.image_url" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -755,8 +613,8 @@
                             <div class="footer-card position-relative">
                                 <div class="live-chat-inner">
                                     <div class="chat-text-field">
-                                        <textarea class="live-chat-field custom-scroll" placeholder="Text Message"></textarea>
-                                        <button class="chat-message-send" type="submit" value="submit">
+                                        <textarea class="live-chat-field custom-scroll" placeholder="Text Message" v-model="newMessageBody"></textarea>
+                                        <button class="chat-message-send" type="submit" value="submit" v-on:click="createMessage()">
                                             <img src="assets/images/icons/plane.png" alt="">
                                         </button>
                                     </div>
@@ -782,29 +640,15 @@
                                         </div>
                                         <div class="message-list-inner">
                                             <ul class="message-list custom-scroll">
+                                              <div v-for="message in messages">
                                                 <li class="text-friends">
-                                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p>
+                                                    <p>{{message.message}}</p>
                                                     <div class="message-time">10 minute ago</div>
                                                 </li>
-                                                <li class="text-author">
+                                              </div>
+                                               <li class="text-author">
                                                     <p>Many desktop publishing packages and web page editors</p>
                                                     <div class="message-time">5 minute ago</div>
-                                                </li>
-                                                <li class="text-friends">
-                                                    <p>packages and web page editors </p>
-                                                    <div class="message-time">2 minute ago</div>
-                                                </li>
-                                                <li class="text-friends">
-                                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p>
-                                                    <div class="message-time">10 minute ago</div>
-                                                </li>
-                                                <li class="text-author">
-                                                    <p>Many desktop publishing packages and web page editors</p>
-                                                    <div class="message-time">5 minute ago</div>
-                                                </li>
-                                                <li class="text-friends">
-                                                    <p>packages and web page editors </p>
-                                                    <div class="message-time">2 minute ago</div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -937,12 +781,60 @@
 </style>
 
 <script>
+import axios from "axios";
+import ActionCable from "actioncable";
+
 export default {
   data: function() {
     return {
       current_user: "",
+      users: [],
       user: [],
+      messages: [],
+      newMessageBody: "",
     };
+  },
+  created: function() {
+    this.indexMessages();
+
+    var cable = ActionCable.createConsumer("ws://localhost:3000/cable");
+
+    cable.subscriptions.create("MessagesChannel", {
+      connected: () => {
+        // Called when the subscription is ready for use on the server
+        console.log("Connected to MessagesChannel");
+      },
+      disconnected: () => {
+        // Called when the subscription has been terminated by the server
+      },
+      received: data => {
+        // Called when there's incoming data on the websocket for this channel
+        console.log("Data from MessagesChannel:", data);
+        // todo: Fix web sockets
+        this.messages.unshift(data); // update the messages in real time
+      }
+    });
+  },
+
+  methods: {
+    indexMessages: function() {
+      axios.get("/api/messages/" + this.$route.params.id).then(response => {
+        console.log("messages index", response);
+        this.messages = response.data;
+      });
+    },
+    createMessage: function() {
+      var params = {
+        message: this.newMessageBody,
+        receiver_id: this.$route.params.id,
+
+
+      };
+      axios.post("/api/messages/" + this.$route.params.id, params).then(response => {
+        console.log("messages index", response);
+        this.newMessageBody = "";
+      });
+    },
   },
   mounted: function() {
     (function ($) {
