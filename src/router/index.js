@@ -7,6 +7,7 @@ import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
 import UsersShow from "../views/UsersShow.vue";
 import MessagesIndex from "../views/MessagesIndex.vue";
+import Map from "../views/Map.vue";
 
 
 Vue.use(VueRouter);
@@ -19,6 +20,7 @@ const routes = [
   { path: "/logout", name: "logout", component: Logout },
   { path: "/users/:id", name: "users-show", component: UsersShow},
   { path: "/messages/:id", name: "messages-index", component: MessagesIndex},
+  { path: '/Map', name: 'map', component: Map, meta: {header: 0, footer: 0, java: 0} },
 ];
 
 const router = new VueRouter({
