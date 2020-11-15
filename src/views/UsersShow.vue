@@ -13,6 +13,8 @@
     </div> -->
     <main>
       <div class="main-wrapper">
+        <!-- <div class="profile-banner-large bg-img" data-bg="/assets/images/banner/profile-banner.jpg"></div> -->
+
         <div class="profile-banner-large bg-img" :data-bg="user.images[1].image_url"></div>
         <div class="profile-menu-area bg-white">
           <div class="container">
@@ -36,7 +38,7 @@
                         <li><a href="photos.html">photos</a></li>
                         <li><a href="friends.html">friends</a></li>
                         <li><a href="about.html">more</a></li>
-                        <!-- <li class="d-inline-block d-md-none"><a href="profile.html">edit profile</a></li> -->
+                        <li class="d-inline-block d-md-none"><a href="profile.html">edit profile</a></li>
                       </ul>
                     </nav>
                   </div>
