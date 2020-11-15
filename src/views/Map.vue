@@ -21,6 +21,7 @@ body {
 
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 export default {
@@ -37,6 +38,7 @@ export default {
     var geocoder = new MapboxGeocoder({
       // Initialize the geocoder
       accessToken: mapboxgl.accessToken, // Set the access token
+      placeholder: "Search for climbing places",
       mapboxgl: mapboxgl, // Set the mapbox-gl instance
       marker: false, // Do not use the default marker style
     });
@@ -44,6 +46,28 @@ export default {
     map.addControl(geocoder);
 
     map.on("load", function() {
+      map.addSource("single-point", {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: [],
+        },
+      });
+
+      map.addLayer({
+        id: "point",
+        source: "single-point",
+        type: "circle",
+        paint: {
+          "circle-radius": 10,
+          "circle-color": "#448ee4",
+        },
+      });
+
+      geocoder.on("result", function(e) {
+        map.getSource("single-point").setData(e.result.geometry);
+      });
+
       map.addSource("dem", {
         type: "raster-dem",
         url: "mapbox://mapbox.terrain-rgb",
