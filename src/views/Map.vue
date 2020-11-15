@@ -20,9 +20,8 @@ body {
 /* global MapboxGeocoder */
 
 import mapboxgl from "mapbox-gl";
+import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { MglMap, MglNavigationControl, MglGeolocateControl } from "vue-mapbox";
-import MglGeocoderControl from "vue-mapbox-geocoder";
 
 export default {
   mounted: function() {
@@ -34,6 +33,15 @@ export default {
       center: [-73.2509381, 42.4500846], // starting position [lng, lat]
       zoom: 6, // starting zoom
     });
+
+    var geocoder = new MapboxGeocoder({
+      // Initialize the geocoder
+      accessToken: mapboxgl.accessToken, // Set the access token
+      mapboxgl: mapboxgl, // Set the mapbox-gl instance
+      marker: false, // Do not use the default marker style
+    });
+
+    map.addControl(geocoder);
 
     map.on("load", function() {
       map.addSource("dem", {
