@@ -87,6 +87,7 @@ export default {
         "https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png",
         // Add an image to use as a custom marker
         function(error, image) {
+          // eslint-disable-next-line curly
           if (error) throw error;
           map.addImage("custom-marker", image);
 
