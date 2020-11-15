@@ -26,6 +26,7 @@ Table of content
 23. footer
 -------------------------------------------------------------------*/
 /*------ Typography Style Start ------*/
+
 body {
   color: #444444;
   line-height: 1.7;
@@ -41,7 +42,8 @@ a {
   transition: 0.4s;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   outline: none;
   text-decoration: none;
 }
@@ -102,19 +104,20 @@ button {
   outline: none;
   padding: 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
   background-color: transparent;
 }
 
-.btn:active, .btn:focus,
+.btn:active,
+.btn:focus,
 button:active,
 button:focus {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 input,
@@ -214,8 +217,8 @@ textarea:focus {
   line-height: 1;
   position: absolute;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 1;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -395,7 +398,7 @@ textarea:focus {
   border-radius: 50%;
   background-color: #dc4734;
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -760,8 +763,8 @@ textarea:focus {
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*------- short classes start -------*/
@@ -831,7 +834,7 @@ textarea:focus {
 ----------------------------------------*/
 .header-top {
   -webkit-box-shadow: 0px 1px 20px 0px rgba(85, 85, 85, 0.25);
-          box-shadow: 0px 1px 20px 0px rgba(85, 85, 85, 0.25);
+  box-shadow: 0px 1px 20px 0px rgba(85, 85, 85, 0.25);
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -859,11 +862,11 @@ textarea:focus {
 .header-top-navigation ul li:before {
   top: 50%;
   left: 100%;
-  content: '/';
+  content: "/";
   position: absolute;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   display: none;
 }
 
@@ -921,7 +924,8 @@ textarea:focus {
   }
 }
 
-.header-top-navigation ul li:hover a, .header-top-navigation ul li.active a {
+.header-top-navigation ul li:hover a,
+.header-top-navigation ul li.active a {
   color: #dc4734;
 }
 
@@ -937,7 +941,7 @@ textarea:focus {
   z-index: 999;
   display: none;
   -webkit-box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
 }
 
 .header-top-navigation ul li .message-dropdown li a {
@@ -951,12 +955,12 @@ textarea:focus {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-bottom: 1px solid #dddddd;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -998,8 +1002,8 @@ textarea:focus {
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .msg-dropdown-footer button {
@@ -1113,8 +1117,8 @@ textarea:focus {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -1230,7 +1234,7 @@ textarea:focus {
   width: 100%;
   z-index: 9;
   -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*------ sticky menu style end ------*/
@@ -1242,12 +1246,12 @@ textarea:focus {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #fff;
   height: 60px;
 }
@@ -1264,12 +1268,12 @@ textarea:focus {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .mobile-logo .profile-thumb-middle,
@@ -1283,8 +1287,8 @@ textarea:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .mobile-menu ul .message-list {
@@ -1351,7 +1355,7 @@ textarea:focus {
   padding: 15px 50px 15px 15px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
 }
 
 .mob-search-btn {
@@ -1360,8 +1364,8 @@ textarea:focus {
   position: absolute;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .mob-search-btn:hover {
@@ -1436,7 +1440,7 @@ textarea:focus {
   padding: 30px;
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -1448,7 +1452,7 @@ textarea:focus {
 .card-small {
   padding: 16px;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .card-profile {
@@ -1486,7 +1490,7 @@ textarea:focus {
   overflow: hidden;
   background-color: #f1f1f1;
   -webkit-box-shadow: inset 0px 1px 10px 0px rgba(85, 85, 85, 0.2);
-          box-shadow: inset 0px 1px 10px 0px rgba(85, 85, 85, 0.2);
+  box-shadow: inset 0px 1px 10px 0px rgba(85, 85, 85, 0.2);
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -1506,8 +1510,8 @@ textarea:focus {
   position: absolute;
   text-transform: uppercase;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 @media only screen and (max-width: 479.98px) {
@@ -1603,8 +1607,8 @@ textarea:focus {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(20px);
-      -ms-transform: translateY(20px);
-          transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 .post-settings {
@@ -1618,15 +1622,15 @@ textarea:focus {
   border-radius: 5px;
   border: 1px solid #e5e5e5;
   -webkit-box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
   -webkit-transform: translateY(30px);
-      -ms-transform: translateY(30px);
-          transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  transform: translateY(30px);
 }
 
 .post-settings li {
@@ -1698,8 +1702,8 @@ textarea:focus {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 12px;
   margin-top: 20px;
 }
@@ -1813,7 +1817,7 @@ textarea:focus {
   z-index: 1;
   border-radius: 0 0 2px 2px;
   -webkit-box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
   display: none;
 }
 
@@ -1915,7 +1919,7 @@ textarea:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  content: '';
+  content: "";
   position: absolute;
   pointer-events: none;
   border: 10px solid rgba(198, 165, 107, 0.3);
@@ -1994,8 +1998,8 @@ textarea:focus {
 .profile-picture-box {
   position: absolute;
   -webkit-transform: translateY(calc(-50% - 10px));
-      -ms-transform: translateY(calc(-50% - 10px));
-          transform: translateY(calc(-50% - 10px));
+  -ms-transform: translateY(calc(-50% - 10px));
+  transform: translateY(calc(-50% - 10px));
   background-color: #fff;
   z-index: 1;
 }
@@ -2003,8 +2007,8 @@ textarea:focus {
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .profile-picture-box {
     -webkit-transform: translateY(calc(-50% - 10px));
-        -ms-transform: translateY(calc(-50% - 10px));
-            transform: translateY(calc(-50% - 10px));
+    -ms-transform: translateY(calc(-50% - 10px));
+    transform: translateY(calc(-50% - 10px));
   }
 }
 
@@ -2019,8 +2023,8 @@ textarea:focus {
 
 .secondary-navigation-style .profile-picture-box {
   -webkit-transform: translateY(calc(-50% - 17px));
-      -ms-transform: translateY(calc(-50% - 17px));
-          transform: translateY(calc(-50% - 17px));
+  -ms-transform: translateY(calc(-50% - 17px));
+  transform: translateY(calc(-50% - 17px));
 }
 
 .profile-picture {
@@ -2038,7 +2042,7 @@ textarea:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  content: '';
+  content: "";
   position: absolute;
   pointer-events: none;
   border: 10px solid #fff;
@@ -2198,19 +2202,21 @@ textarea:focus {
   opacity: 1;
   visibility: hidden;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
 
-.unorder-list .like-button:hover .heart, .unorder-list .like-button.active .heart {
+.unorder-list .like-button:hover .heart,
+.unorder-list .like-button.active .heart {
   opacity: 0;
   visibility: hidden;
 }
 
-.unorder-list .like-button:hover .heart-color, .unorder-list .like-button.active .heart-color {
+.unorder-list .like-button:hover .heart-color,
+.unorder-list .like-button.active .heart-color {
   opacity: 1;
   visibility: visible;
 }
@@ -2242,13 +2248,13 @@ textarea:focus {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(13px);
-      -ms-transform: translateY(13px);
-          transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  transform: translateY(13px);
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
   -webkit-box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
 }
 
 .frnd-request-list.show {
@@ -2276,8 +2282,8 @@ textarea:focus {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .frnd-request-member .request-thumb {
@@ -2345,7 +2351,10 @@ textarea:focus {
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1499.98px), only screen and (min-width: 992px) and (max-width: 1199.98px), only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767.98px) {
+@media only screen and (min-width: 1200px) and (max-width: 1499.98px),
+  only screen and (min-width: 992px) and (max-width: 1199.98px),
+  only screen and (min-width: 768px) and (max-width: 991.98px),
+  only screen and (max-width: 767.98px) {
   .signup-form-wrapper {
     padding: 47px 30px;
   }
@@ -2368,7 +2377,7 @@ textarea:focus {
   max-width: 572px;
   margin: auto;
   -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .signup-inner .title {
@@ -2384,7 +2393,9 @@ textarea:focus {
   position: relative;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199.98px), only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767.98px) {
+@media only screen and (min-width: 992px) and (max-width: 1199.98px),
+  only screen and (min-width: 768px) and (max-width: 991.98px),
+  only screen and (max-width: 767.98px) {
   .signup-inner--form {
     padding: 42px 50px 50px;
   }
@@ -2399,15 +2410,15 @@ textarea:focus {
 .signup-inner--form:before {
   top: 50%;
   left: 50%;
-  content: '';
+  content: "";
   position: absolute;
   height: 170px;
   width: 174px;
   background-image: url("../images/icons/login.png");
   background-repeat: no-repeat;
   -webkit-transform: translate(-50%, -80%);
-      -ms-transform: translate(-50%, -80%);
-          transform: translate(-50%, -80%);
+  -ms-transform: translate(-50%, -80%);
+  transform: translate(-50%, -80%);
 }
 
 .signup-inner--form .single-field {
@@ -2488,8 +2499,8 @@ textarea:focus {
     padding: 10px 30px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -2624,8 +2635,8 @@ textarea:focus {
   width: 610px;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
   font-size: 36px;
@@ -2725,7 +2736,7 @@ textarea:focus {
   background-color: #fff;
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.2);
 }
 
 .content-title {
@@ -2794,7 +2805,7 @@ textarea:focus {
   text-align: center;
   padding: 13px 15px 17px;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.2);
 }
 
 .photo-gallery-caption .photos-caption {
@@ -2830,8 +2841,8 @@ textarea:focus {
   margin: auto;
   position: absolute;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.4s;
@@ -2851,7 +2862,7 @@ textarea:focus {
   left: 0;
   width: 100%;
   height: 1px;
-  content: '';
+  content: "";
   position: absolute;
   background-color: #fff;
 }
@@ -2861,7 +2872,7 @@ textarea:focus {
   left: 50%;
   width: 1px;
   height: 100%;
-  content: '';
+  content: "";
   position: absolute;
   background-color: #fff;
 }
@@ -2893,7 +2904,7 @@ textarea:focus {
   padding: 0;
   background-color: transparent;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .friends-section .content-box.friends-zone .friend-list-view {
@@ -2912,15 +2923,15 @@ textarea:focus {
   padding: 25px 30px;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 20px;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.2);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -3027,7 +3038,8 @@ textarea:focus {
   }
 }
 
-.filter-menu button:hover, .filter-menu button.active {
+.filter-menu button:hover,
+.filter-menu button.active {
   color: #dc4734;
 }
 
@@ -3053,8 +3065,8 @@ textarea:focus {
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -3074,11 +3086,11 @@ textarea:focus {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 325px;
   -webkit-box-shadow: 0px -5px 36px -5px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px -5px 36px -5px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px -5px 36px -5px rgba(51, 51, 51, 0.2);
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1499.98px) {
@@ -3104,7 +3116,7 @@ textarea:focus {
 .active-profile-wrapper {
   width: 1170px;
   -webkit-box-shadow: 0px -5px 36px -5px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px -5px 36px -5px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px -5px 36px -5px rgba(51, 51, 51, 0.2);
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599.98px) {
@@ -3134,7 +3146,7 @@ textarea:focus {
 
 .active-profile-mob-wrapper {
   -webkit-box-shadow: 0px -5px 36px -5px rgba(51, 51, 51, 0.2);
-          box-shadow: 0px -5px 36px -5px rgba(51, 51, 51, 0.2);
+  box-shadow: 0px -5px 36px -5px rgba(51, 51, 51, 0.2);
 }
 
 /*-------- active profile carousel start --------*/
@@ -3157,12 +3169,12 @@ textarea:focus {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #dc4734;
 }
 
@@ -3221,19 +3233,19 @@ textarea:focus {
   -o-transition: 0.4s;
   transition: 0.4s;
   -webkit-transform: scaleY(0);
-      -ms-transform: scaleY(0);
-          transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
   -webkit-transform-origin: bottom;
-      -ms-transform-origin: bottom;
-          transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
 }
 
 .friend-search-list.show {
   opacity: 1;
   visibility: visible;
   -webkit-transform: scaleY(1);
-      -ms-transform: scaleY(1);
-          transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 .friend-search-list ul li {
@@ -3286,19 +3298,19 @@ textarea:focus {
   -o-transition: 0.4s;
   transition: 0.4s;
   -webkit-transform: scaleY(0);
-      -ms-transform: scaleY(0);
-          transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
   -webkit-transform-origin: bottom;
-      -ms-transform-origin: bottom;
-          transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
 }
 
 .chat-output-box.show {
   opacity: 1;
   visibility: visible;
   -webkit-transform: scaleY(1);
-      -ms-transform: scaleY(1);
-          transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 .live-chat-title {
@@ -3309,8 +3321,8 @@ textarea:focus {
   height: 62px;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 25px;
   background-color: #dc4734;
 }
@@ -3358,8 +3370,8 @@ textarea:focus {
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .chat-text-field .chat-message-send {
