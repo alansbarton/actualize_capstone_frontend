@@ -35,13 +35,6 @@ export default {
       zoom: 6, // starting zoom
     });
 
-    map.addControl(
-      new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        mapboxgl: mapboxgl,
-      })
-    );
-
     map.on("load", function() {
       map.addSource("dem", {
         type: "raster-dem",

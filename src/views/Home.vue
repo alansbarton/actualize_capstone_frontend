@@ -103,7 +103,7 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-middle">
-                              <img v-bind:src="`user.image.image_url`" alt="profile picture" />
+                              <img v-bind:src="user.images.image_url" alt="profile picture" />
                             </figure>
                           </a>
                         </div>

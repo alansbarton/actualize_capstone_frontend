@@ -18,7 +18,7 @@
               <div class="header-top-navigation">
                 <nav>
                   <ul>
-                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active"><a href="/home">Home</a></li>
                     <li class="msg-trigger">
                       <a class="msg-trigger-btn" href="#a">message</a>
                       <div class="message-dropdown" id="a">
