@@ -308,8 +308,12 @@
                 <div class="footer-card position-relative">
                   <div class="live-chat-inner">
                     <div class="chat-text-field">
-                      <textarea class="live-chat-field custom-scroll" placeholder="Text Message"></textarea>
-                      <button class="chat-message-send" type="submit" value="submit">
+                      <textarea
+                        class="live-chat-field custom-scroll"
+                        placeholder="Text Message"
+                        v-model="newMessageBody"
+                      ></textarea>
+                      <button class="chat-message-send" type="submit" value="submit" v-on:click="createMessage()">
                         <img src="assets/images/icons/plane.png" alt="" />
                       </button>
                     </div>
@@ -319,7 +323,7 @@
                         <div class="profile-thumb active">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="assets/images/profile/profile-small-15.jpg" alt="profile picture" />
+                              <img :src="selectedUser.images.image_url" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
@@ -428,7 +432,13 @@ export default {
       users: [],
       messages: [],
       newMessageBody: "",
-      selectedUser: { messages: [] },
+      selectedUser: {
+        id: "",
+        messages: [],
+        images: {
+          image_url: "",
+        },
+      },
     };
   },
   created: function() {
@@ -463,7 +473,7 @@ export default {
     createMessage: function() {
       var params = {
         message: this.newMessageBody,
-        receiver_id: this.$route.params.id,
+        receiver_id: this.selectedUser.id,
       };
       axios.post("/api/messages/" + this.$route.params.id, params).then(response => {
         console.log("messages index", response);
