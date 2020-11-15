@@ -84,7 +84,7 @@
                         <li>
                           <a href="#">
                             <i class="bi bi-heart-beat"></i>
-                            <p v-for="climbing_style in user.climbing_styles">{{ climbing_style.name }}</p>
+                            <!-- <p v-for="climbing_style in user.climbing_styles">{{ climbing_style.name }}</p> -->
                           </a>
                         </li>
                       </ul>
