@@ -1,15 +1,5 @@
 <template>
   <div class="home">
-    <!-- <h1>Users</h1> -->
-    <!-- <div v-for="user in users">
-      <h3>{{ user.name }}</h3>
-      <img v-bind:src="user.images.image_url">
-      <p>Climbing experiance: {{ user.years_experiance }} years</p>
-      <p>skill level: {{ user.font_scale }} and {{ user.victor_scale }}</p>
-      <p>area: {{ user.location }}</p>
-      <p>{{ user.description }}</p>
-      <router-link v-bind:to="`/users/${user.id}`">More details</router-link>
-    </div> -->
     <main>
       <div class="main-wrapper">
         <!-- profile banner area start -->
@@ -156,12 +146,16 @@
                     </div>
                     <div class="frnd-search-inner custom-scroll">
                       <ul>
-                        <li class="d-flex align-items-center profile-active">
+                        <li
+                          v-for="user in users"
+                          class="d-flex align-items-center profile-active"
+                          v-on:click="selectedUser = user"
+                        >
                           <!-- profile picture end -->
                           <div class="profile-thumb active">
                             <a href="#">
                               <figure class="profile-thumb-small">
-                                <img src="assets/images/profile/profile-small-1.jpg" alt="profile picture" />
+                                <img :src="user.images.image_url" alt="profile picture" />
                               </figure>
                             </a>
                           </div>
@@ -170,118 +164,6 @@
                           <div class="posted-author">
                             <h6 class="author">Jon Wilime</h6>
                             <p>Many desktop publishing</p>
-                          </div>
-                        </li>
-                        <li class="d-flex align-items-center profile-active">
-                          <!-- profile picture end -->
-                          <div class="profile-thumb active">
-                            <a href="#">
-                              <figure class="profile-thumb-small">
-                                <img src="assets/images/profile/profile-small-2.jpg" alt="profile picture" />
-                              </figure>
-                            </a>
-                          </div>
-                          <!-- profile picture end -->
-
-                          <div class="posted-author">
-                            <h6 class="author"><a href="profile.html">Jon Wileyam</a></h6>
-                            <button class="add-frnd">add friend</button>
-                          </div>
-                        </li>
-                        <li class="d-flex align-items-center profile-active">
-                          <!-- profile picture end -->
-                          <div class="profile-thumb active">
-                            <a href="#">
-                              <figure class="profile-thumb-small">
-                                <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture" />
-                              </figure>
-                            </a>
-                          </div>
-                          <!-- profile picture end -->
-
-                          <div class="posted-author">
-                            <h6 class="author"><a href="profile.html">Mili Raoulin</a></h6>
-                            <button class="add-frnd">add friend</button>
-                          </div>
-                        </li>
-                        <li class="d-flex align-items-center profile-active">
-                          <!-- profile picture end -->
-                          <div class="profile-thumb active">
-                            <a href="#">
-                              <figure class="profile-thumb-small">
-                                <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture" />
-                              </figure>
-                            </a>
-                          </div>
-                          <!-- profile picture end -->
-
-                          <div class="posted-author">
-                            <h6 class="author"><a href="profile.html">Jon Wilime</a></h6>
-                            <button class="add-frnd">10 mutual friends</button>
-                          </div>
-                        </li>
-                        <li class="d-flex align-items-center profile-active">
-                          <!-- profile picture end -->
-                          <div class="profile-thumb active">
-                            <a href="#">
-                              <figure class="profile-thumb-small">
-                                <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture" />
-                              </figure>
-                            </a>
-                          </div>
-                          <!-- profile picture end -->
-
-                          <div class="posted-author">
-                            <h6 class="author"><a href="profile.html">Robart faul</a></h6>
-                            <button class="add-frnd">12 mutual friends</button>
-                          </div>
-                        </li>
-                        <li class="d-flex align-items-center profile-active">
-                          <!-- profile picture end -->
-                          <div class="profile-thumb active">
-                            <a href="#">
-                              <figure class="profile-thumb-small">
-                                <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture" />
-                              </figure>
-                            </a>
-                          </div>
-                          <!-- profile picture end -->
-
-                          <div class="posted-author">
-                            <h6 class="author"><a href="profile.html">Mili Raoulin</a></h6>
-                            <button class="add-frnd">add friend</button>
-                          </div>
-                        </li>
-                        <li class="d-flex align-items-center profile-active">
-                          <!-- profile picture end -->
-                          <div class="profile-thumb active">
-                            <a href="#">
-                              <figure class="profile-thumb-small">
-                                <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture" />
-                              </figure>
-                            </a>
-                          </div>
-                          <!-- profile picture end -->
-
-                          <div class="posted-author">
-                            <h6 class="author"><a href="profile.html">Jon Wilime</a></h6>
-                            <button class="add-frnd">10 mutual friends</button>
-                          </div>
-                        </li>
-                        <li class="d-flex align-items-center profile-active">
-                          <!-- profile picture end -->
-                          <div class="profile-thumb active">
-                            <a href="#">
-                              <figure class="profile-thumb-small">
-                                <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture" />
-                              </figure>
-                            </a>
-                          </div>
-                          <!-- profile picture end -->
-
-                          <div class="posted-author">
-                            <h6 class="author"><a href="profile.html">Robart faul</a></h6>
-                            <button class="add-frnd">12 mutual friends</button>
                           </div>
                         </li>
                       </ul>
@@ -407,6 +289,65 @@
                           </a>
                         </div>
                       </div>
+
+                      <!-- profile picture end -->
+                      <div class="single-slide">
+                        <div class="profile-thumb active profile-active">
+                          <a href="javascript:void(0)">
+                            <figure class="profile-thumb-small profile-active">
+                              <img src="assets/images/profile/profile-small-2.jpg" alt="profile picture" />
+                            </figure>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- profile picture end -->
+
+                      <!-- profile picture end -->
+                      <div class="single-slide">
+                        <div class="profile-thumb active profile-active">
+                          <a href="javascript:void(0)">
+                            <figure class="profile-thumb-small profile-active">
+                              <img src="assets/images/profile/profile-small-3.jpg" alt="profile picture" />
+                            </figure>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- profile picture end -->
+
+                      <!-- profile picture end -->
+                      <div class="single-slide">
+                        <div class="profile-thumb active profile-active">
+                          <a href="javascript:void(0)">
+                            <figure class="profile-thumb-small profile-active">
+                              <img src="assets/images/profile/profile-small-4.jpg" alt="profile picture" />
+                            </figure>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- profile picture end -->
+
+                      <!-- profile picture end -->
+                      <div class="single-slide">
+                        <div class="profile-thumb active profile-active">
+                          <a href="javascript:void(0)">
+                            <figure class="profile-thumb-small profile-active">
+                              <img src="assets/images/profile/profile-small-5.jpg" alt="profile picture" />
+                            </figure>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- profile picture end -->
+
+                      <!-- profile picture end -->
+                      <div class="single-slide">
+                        <div class="profile-thumb active profile-active">
+                          <a href="javascript:void(0)">
+                            <figure class="profile-thumb-small profile-active">
+                              <img src="assets/images/profile/profile-small-9.jpg" alt="profile picture" />
+                            </figure>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -439,7 +380,9 @@ export default {
           image_url: "",
         },
       },
-      user: {},
+      user: {
+        current_user_images: [{}, {}],
+      },
     };
   },
   created: function() {
@@ -543,58 +486,64 @@ export default {
         plyrYoutube = new Plyr(".plyr-youtube"),
         plyrVimeo = new Plyr(".plyr-vimeo");
 
+      //   active profile carousel js
+      $(".active-profile-carousel").slick({
+        speed: 800,
+        slidesToShow: 10,
+        prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-arrow-left-rounded"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="bi bi-arrow-right-rounded"></i></button>',
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 5,
+            },
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 8,
+            },
+          },
+        ],
+      });
+
       // active profile carousel js
-      //   $('.active-profile-carousel').slick({
-      //     speed: 800,
-      //     slidesToShow: 10,
-      //     prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-arrow-left-rounded"></i></button>',
-      //     nextArrow: '<button type="button" class="slick-next"><i class="bi bi-arrow-right-rounded"></i></button>',
-      //     responsive: [{
-      //       breakpoint: 1200,
-      //       settings: {
-      //         slidesToShow: 5,
-      //       }
-      //     },
-      //     {
-      //       breakpoint: 992,
-      //       settings: {
-      //         slidesToShow: 8,
-      //       }
-      //     }]
-      //   });
+      $(".active-profile-mobile").slick({
+        speed: 800,
+        slidesToShow: 6,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+        ],
+      });
 
-      //   // active profile carousel js
-      //   $('.active-profile-mobile').slick({
-      //     speed: 800,
-      //     slidesToShow: 6,
-      //     arrows: false,
-      //     responsive: [{
-      //       breakpoint: 480,
-      //       settings: {
-      //         slidesToShow: 4,
-      //       }
-      //     }]
-      //   });
-
-      //   // active profile carousel js
-      //   $('.favorite-item-carousel').slick({
-      //     autoplay: true,
-      //     speed: 800,
-      //     slidesToShow: 5,
-      //     arrows: false,
-      //     responsive: [{
-      //       breakpoint: 992,
-      //       settings: {
-      //         slidesToShow: 3,
-      //       }
-      //     },
-      //     {
-      //       breakpoint: 576,
-      //       settings: {
-      //         slidesToShow: 2,
-      //       }
-      //     }]
-      //   });
+      // active profile carousel js
+      $(".favorite-item-carousel").slick({
+        autoplay: true,
+        speed: 800,
+        slidesToShow: 5,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+        ],
+      });
 
       // live chat box and friend search box active js
       $(".profile-active").on("click", function() {
