@@ -13,7 +13,7 @@
     <main>
       <div class="main-wrapper">
         <!-- profile banner area start -->
-        <div class="profile-banner-large bg-img" data-bg="assets/images/banner/profile-banner.jpg"></div>
+        <div class="profile-banner-large bg-img" :data-bg="user.current_user_images[1].image_url"></div>
         <!-- profile banner area end -->
 
         <!-- profile menu area start -->
@@ -24,7 +24,7 @@
                 <div class="profile-picture-box">
                   <figure class="profile-picture">
                     <a href="#">
-                      <img src="assets/images/profile/profile-1.jpg" alt="profile picture" />
+                      <img :src="user.current_user_images[0].image_url" alt="profile picture" />
                     </a>
                   </figure>
                 </div>
@@ -439,10 +439,12 @@ export default {
           image_url: "",
         },
       },
+      user: {},
     };
   },
   created: function() {
     this.indexUsers();
+    this.showCurrentUser();
     // this.indexMessages();
 
     var cable = ActionCable.createConsumer("ws://localhost:3000/cable");
@@ -470,6 +472,7 @@ export default {
         this.messages = response.data;
       });
     },
+
     createMessage: function() {
       var params = {
         message: this.newMessageBody,
@@ -490,6 +493,14 @@ export default {
         });
       });
     },
+
+    showCurrentUser: function() {
+      axios.get("/api/current_user").then(response => {
+        console.log("user show", response);
+        this.user = response.data;
+      });
+    },
+
     setUpTheme: function() {
       $(".msg-trigger-btn").on("click", function(event) {
         event.stopPropagation();

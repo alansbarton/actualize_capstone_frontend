@@ -233,7 +233,7 @@
                   <div class="profile-thumb-small">
                     <a href="javascript:void(0)" class="profile-triger">
                       <figure>
-                        <img src="/assets/images/profile/profile-small-1.jpg" alt="profile picture" />
+                        <img :src="user.current_user_images[0].image_url" alt="profile picture" />
                       </figure>
                     </a>
                     <div class="profile-dropdown">
@@ -521,7 +521,7 @@ export default {
     return {
       current_user: "",
       users: [],
-      user: [],
+      user: {},
       messages: [],
       newMessageBody: "",
       selectedUser: {
@@ -533,9 +533,18 @@ export default {
       },
     };
   },
-  created: function() {},
+  created: function() {
+    this.showCurrentUser();
+  },
 
   methods: {
+    showCurrentUser: function() {
+      axios.get("/api/current_user").then(response => {
+        console.log("user show", response);
+        this.user = response.data;
+      });
+    },
+
     mounted: function() {
       (function($) {
         "use strict";
