@@ -40,7 +40,7 @@
             <div class="row no-gutters">
               <div class="col-lg-6 order-2 order-lg-1">
                 <div class="timeline-bg-content bg-img" data-bg="assets/images/timeline/adda-timeline.jpg">
-                  <h3 class="timeline-bg-title">Let’s find your next Climbing partner!</h3>
+                  <h3 class="timeline-bg-title">Find your next climbing partner!</h3>
                 </div>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
