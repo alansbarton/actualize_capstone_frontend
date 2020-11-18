@@ -490,14 +490,14 @@
                   <div class="profile-thumb">
                     <a href="#">
                       <figure class="profile-thumb-middle">
-                        <img src="/assets/images/profile/profile-small-4.jpg" alt="profile picture" />
+                        <img src="/assets/images/profile/user_5.jpg" alt="profile picture" />
                       </figure>
                     </a>
                   </div>
                   <!-- profile picture end -->
 
                   <div class="posted-author">
-                    <h6 class="author"><a href="profile.html">william henry</a></h6>
+                    <h6 class="author"><a href="profile.html">Sasha Digiulia</a></h6>
                     <span class="post-time">35 min ago</span>
                   </div>
 
@@ -517,12 +517,13 @@
                 <!-- post title start -->
                 <div class="post-content">
                   <p class="post-desc">
-                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
-                    text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    What it takes to climb the world’s first 9c? Let’s find out in Silence, a movie by Bernardo Giménez.
+                    It shows what preceded the afternoon of September 3, 2017 when Adam Ondra, a professional rock
+                    climber and currently one of the best climbers in the world, made a little piece of climbing history
                   </p>
                   <div class="plyr__video-embed plyr-video">
                     <iframe
-                      src="https://www.youtube.com/embed/WeA7edXsU40"
+                      src="https://www.youtube.com/watch?v=ZRTNHDd0gL8"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
                     ></iframe>
