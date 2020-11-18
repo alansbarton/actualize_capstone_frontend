@@ -13,7 +13,7 @@
                     </a>
                   </div>
                   <div class="timeline-tagline">
-                    <h6 class="tagline">This icon doesnt work</h6>
+                    <h6 class="tagline">Climbers</h6>
                   </div>
                 </div>
               </div>

@@ -34,7 +34,7 @@
                     <nav>
                       <ul class="main-menu">
                         <li class="active"><a href="#">timeline</a></li>
-                        <li><a href="about.html">about</a></li>
+                        <li><a href="/Map">map</a></li>
                         <li><a href="photos.html">photos</a></li>
                         <li><a href="friends.html">friends</a></li>
                         <li><a href="about.html">more</a></li>
@@ -68,7 +68,7 @@
                         <li>
                           <a href="#">
                             <i class="bi bi-office-bag"></i>
-                            Graphic Designer
+                            Sport/Boulder Climber
                           </a>
                         </li>
                         <li>
@@ -79,14 +79,8 @@
                         </li>
                         <li>
                           <a href="#">
-                            <i class="bi bi-location-pointer"></i>
-                            Pulshar, Melbourne
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
                             <i class="bi bi-heart-beat"></i>
-                            <!-- <p v-for="climbing_style in user.climbing_styles">{{ climbing_style.name }}</p> -->
+                            {{ user.victor_scale }} / {{ user.font_scale }}
                           </a>
                         </li>
                       </ul>
@@ -288,7 +282,7 @@
                   <div class="profile-thumb">
                     <a href="#">
                       <figure class="profile-thumb-middle">
-                        <img src="/assets/images/profile/profile-small-37.jpg" alt="profile picture" />
+                        <img :src="user.images[0].image_url" alt="profile picture" />
                       </figure>
                     </a>
                   </div>
