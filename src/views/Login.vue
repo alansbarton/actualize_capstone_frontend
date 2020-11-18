@@ -13,7 +13,7 @@
                     </a>
                   </div>
                   <div class="timeline-tagline">
-                    <h6 class="tagline">Climbers</h6>
+                    <h6 class="tagline">Climbers Only</h6>
                   </div>
                 </div>
               </div>
@@ -40,14 +40,14 @@
             <div class="row no-gutters">
               <div class="col-lg-6 order-2 order-lg-1">
                 <div class="timeline-bg-content bg-img" data-bg="assets/images/timeline/adda-timeline.jpg">
-                  <h3 class="timeline-bg-title">Let’s find your next belay partner!</h3>
+                  <h3 class="timeline-bg-title">Let’s find your next Climbing partner!</h3>
                 </div>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center">
                 <div class="signup-form-wrapper">
                   <h1 class="create-acc text-center">Create An Account</h1>
                   <div class="signup-inner text-center">
-                    <h3 class="title">Welcome to Climbers</h3>
+                    <h3 class="title">Welcome to Climbers Only</h3>
 
                     <form class="signup-inner--form" v-on:submit.prevent="submitSignup()">
                       <div class="row">
@@ -94,16 +94,7 @@
                           </select>
                         </div>
                         <div class="col-12">
-                          <select class="nice-select" name="sortby">
-                            <option value="trending">State</option>
-                            <option value="sales">CT</option>
-                            <option value="sales">RI</option>
-                            <option value="sales">FL</option>
-                            <option value="sales">CO</option>
-                            <option value="sales">TN</option>
-                            <option value="sales">GA</option>
-                            <option value="sales">SC</option>
-                          </select>
+                          <input type="text" class="single-field" placeholder="City/State" v-model="locaton" />
                         </div>
                         <div class="col-12">
                           <input type="submit" class="submit-btn" value="Submit" />
