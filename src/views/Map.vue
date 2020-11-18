@@ -100,7 +100,7 @@ export default {
                   type: "Feature",
                   properties: {
                     description:
-                      "<strong>Rumney NH</strong><p>Make it Mount Pleasant is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>",
+                      "<strong>Rumney NH</strong><p>Rumney is one of the premier sport climbing destinations in the country. This area has become a focal point of hard sport climbing, with climbers from all over the world visiting during the fall season.</p>",
                   },
                   geometry: {
                     type: "Point",
@@ -111,7 +111,7 @@ export default {
                   type: "Feature",
                   properties: {
                     description:
-                      "<strong>Lincoln Woods State Park</strong><p>Head to Lounge 201 (201 Massachusetts Avenue NE) Sunday for a Mad Men Season Five Finale Watch Party, complete with 60s costume contest, Mad Men trivia, and retro food and drink. 8:00-11:00 p.m. $10 general admission, $20 admission and two hour open bar.</p>",
+                      "<strong>Lincoln Woods State Park</strong><p>High quality bouldering on sharply-textured granite awaits urban adventurers in Lincoln Woods State Park, a few miles north of Providence, R.I. It is entirely fitting that Little Rhody's best climbing is on the small stones. Biking and walking trails link clusters of boulders, set among picnic areas and ponds. The climbing season extends deep into winter here, when sunny days in the 20s and 30s invite beanie-headed pebble wrestlers to enjoy killer friction with handwarmers simmering in chalkbags and wool socks stuffed in pockets.</p>",
                   },
                   geometry: {
                     type: "Point",
@@ -122,7 +122,7 @@ export default {
                   type: "Feature",
                   properties: {
                     description:
-                      "<strong>Shwangunk Mountains</strong><p>EatBar (2761 Washington Boulevard Arlington VA) is throwing a Big Backyard Beach Bash and Wine Fest on Saturday, serving up conch fritters, fish tacos and crab sliders, and Red Apron hot dogs. 12:00-3:00 p.m. $25.</p>",
+                      "<strong>Shwangunk Mountains</strong><p>The Gunks (short for Shawangunks) is one of the premier climbing areas in the country. Located near New Paltz, NY, the Gunks is about 85 miles from the NYC metropolitan area, making it a popular weekend destination. The rock is quartz conglomerate, solid rock with horizontal rather than vertical cracks. Climbing at the Gunks is characterized by roofs, jugs, traverses, big air, and sometimes sporty pro. The Gunks is famous for great one-to-three-pitch climbs of all levels of difficulty. You'll find some of the best easy and moderate trad climbs in the country at the Gunks. There are a few bolted climbs at the Gunks, but no sport climbs.</p>",
                   },
                   geometry: {
                     type: "Point",
@@ -133,7 +133,7 @@ export default {
                   type: "Feature",
                   properties: {
                     description:
-                      "<strong>Ragged Mountain</strong><p>The Ballston Arts & Crafts Market sets up shop next to the Ballston metro this Saturday for the first of five dates this summer. Nearly 35 artists and crafters will be on hand selling their wares. 10:00-4:00 p.m.</p>",
+                      "<strong>Ragged Mountain</strong><p>Ragged Mountain, est. 761 feet (232 m), is a traprock mountain ridge located 3 miles (5 km) west of New Britain, Connecticut in the town of Southington and Berlin, Connecticut. It is part of the narrow, linear Metacomet Ridge that extends from Long Island Sound near New Haven, Connecticut, north through the Connecticut River Valley of Massachusetts to the Vermont border. </p>",
                   },
                   geometry: {
                     type: "Point",
@@ -144,7 +144,7 @@ export default {
                   type: "Feature",
                   properties: {
                     description:
-                      "<strong>Chatfield Hollow</strong><p>Feeling dandy? Get fancy, grab your bike, and take part in this year's Seersucker Social bike ride from Dandies and Quaintrelles. After the ride enjoy a lawn party at Hillwood with jazz, cocktails, paper hat-making, and more. 11:00-7:00 p.m.</p>",
+                      "<strong>Chatfield Hollow</strong><p>Chatfield Hollow's Main Wall is the crown jewel of all the rope climbing in and around Chatfield State Park. People have been climbing here at the Main Wall since the early 1970's and new routes are still going up here today. The Main Wall at Chatfield has a good diversity routes in a beautiful hardwood forest setting. Chatfield's metamorphic gneiss rock is distinctively different from Central CT's trap rock.</p>",
                   },
                   geometry: {
                     type: "Point",

@@ -1,20 +1,7 @@
 <template>
   <div class="users-show">
-    <!-- <div>
-      <h3>{{ user.name }}</h3>
-      
-      <p>Climbing experiance: {{ user.years_experiance }} years</p>
-      <p>skill level: {{ user.font_scale }} and {{ user.victor_scale }}</p> -->
-    <!-- <p v-for="climbing_style in climbing_styles">{{ climbing_style.name }}</p> -->
-    <!-- <p>area: {{ user.location }}</p>
-      <p>{{ user.description }}</p>
-      <router-link v-bind:to="`/messages/${user.id}`">message</router-link> | 
-      <router-link v-bind:to="`/`">All users</router-link>
-    </div> -->
     <main>
       <div class="main-wrapper">
-        <!-- <div class="profile-banner-large bg-img" data-bg="/assets/images/banner/profile-banner.jpg"></div> -->
-
         <div class="profile-banner-large bg-img" :data-bg="user.images[1].image_url"></div>
         <div class="profile-menu-area bg-white">
           <div class="container">
@@ -856,7 +843,7 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="/assets/images/profile/profile-small-9.jpg" alt="profile picture" />
+                              <img src="/assets/images/profile/user_10.jpg" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
@@ -872,14 +859,14 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="/assets/images/profile/profile-small-35.jpg" alt="profile picture" />
+                              <img src="/assets/images/profile/user_3.jpg" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
                         <!-- profile picture end -->
 
                         <div class="unorder-list-info">
-                          <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
+                          <h3 class="list-title"><a href="#">Where are you?</a></h3>
                           <p class="list-subtitle">10 min ago</p>
                         </div>
                       </li>
@@ -888,14 +875,14 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="/assets/images/profile/profile-small-15.jpg" alt="profile picture" />
+                              <img src="/assets/images/profile/user_5.jpg" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
                         <!-- profile picture end -->
 
                         <div class="unorder-list-info">
-                          <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
+                          <h3 class="list-title"><a href="#">You at the gym</a></h3>
                           <p class="list-subtitle">18 min ago</p>
                         </div>
                       </li>
@@ -904,14 +891,14 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="/assets/images/profile/profile-small-6.jpg" alt="profile picture" />
+                              <img src="/assets/images/profile/user_7.jpg" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
                         <!-- profile picture end -->
 
                         <div class="unorder-list-info">
-                          <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
+                          <h3 class="list-title"><a href="#">Want to grab a beer later?</a></h3>
                           <p class="list-subtitle">25 min ago</p>
                         </div>
                       </li>
@@ -920,14 +907,14 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="/assets/images/profile/profile-small-34.jpg" alt="profile picture" />
+                              <img src="/assets/images/profile/user_9.jpg" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
                         <!-- profile picture end -->
 
                         <div class="unorder-list-info">
-                          <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
+                          <h3 class="list-title"><a href="#">When are you heading out?</a></h3>
                           <p class="list-subtitle">39 min ago</p>
                         </div>
                       </li>
@@ -959,14 +946,14 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="/assets/images/profile/profile-small-10.jpg" alt="profile picture" />
+                              <img src="/assets/images/profile/user_10.jpg" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
                         <!-- profile picture end -->
 
                         <div class="unorder-list-info">
-                          <h3 class="list-title"><a href="#">arfim bolt</a></h3>
+                          <h3 class="list-title"><a href="#">Brad Godright</a></h3>
                           <p class="list-subtitle"><a href="#">10 mutual</a></p>
                         </div>
                         <button class="like-button">
@@ -979,14 +966,14 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="/assets/images/profile/profile-small-2.jpg" alt="profile picture" />
+                              <img src="/assets/images/profile/user_3.jpg" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
                         <!-- profile picture end -->
 
                         <div class="unorder-list-info">
-                          <h3 class="list-title"><a href="#">marry wither</a></h3>
+                          <h3 class="list-title"><a href="#">Alex Honnold</a></h3>
                           <p class="list-subtitle"><a href="#">02 mutual</a></p>
                         </div>
                         <button class="like-button active">
@@ -999,14 +986,14 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="/assets/images/profile/profile-small-5.jpg" alt="profile picture" />
+                              <img src="/assets/images/profile/user_5.jpg" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
                         <!-- profile picture end -->
 
                         <div class="unorder-list-info">
-                          <h3 class="list-title"><a href="#">Rolin Theitar</a></h3>
+                          <h3 class="list-title"><a href="#">Sasha Digiulia</a></h3>
                           <p class="list-subtitle"><a href="#">drama</a></p>
                         </div>
                         <button class="like-button">
@@ -1019,14 +1006,14 @@
                         <div class="profile-thumb">
                           <a href="#">
                             <figure class="profile-thumb-small">
-                              <img src="/assets/images/profile/profile-small-14.jpg" alt="profile picture" />
+                              <img src="/assets/images/profile/user_7.jpg" alt="profile picture" />
                             </figure>
                           </a>
                         </div>
                         <!-- profile picture end -->
 
                         <div class="unorder-list-info">
-                          <h3 class="list-title"><a href="#">Active Mind</a></h3>
+                          <h3 class="list-title"><a href="#">Cris Sharma</a></h3>
                           <p class="list-subtitle"><a href="#">fitness</a></p>
                         </div>
                         <button class="like-button">
