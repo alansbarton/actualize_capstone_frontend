@@ -132,7 +132,12 @@
                 <div class="footer-card position-relative">
                   <div class="friends-search">
                     <form class="search-box">
-                      <input type="text" placeholder="Search Your Friends" class="search-field" />
+                      <input
+                        type="text"
+                        placeholder="Search Your Friends"
+                        class="search-field"
+                        v-model="searchFilter"
+                      />
                       <button class="search-btn"><i class="flaticon-search"></i></button>
                     </form>
                   </div>
@@ -147,7 +152,14 @@
                     <div class="frnd-search-inner custom-scroll">
                       <ul>
                         <li
-                          v-for="user in users"
+                          v-for="user in filterBy(
+                            users,
+                            searchFilter,
+                            'name',
+                            'location',
+                            'victor_scale',
+                            'font_scale'
+                          )"
                           class="d-flex align-items-center profile-active"
                           v-on:click="selectedUser = user"
                         >
@@ -162,8 +174,8 @@
                           <!-- profile picture end -->
 
                           <div class="posted-author">
-                            <h6 class="author">Jon Wilime</h6>
-                            <p>Many desktop publishing</p>
+                            <h6 class="author">{{ user.name }}</h6>
+                            <p>{{ user.location }}</p>
                           </div>
                         </li>
                       </ul>
@@ -366,10 +378,14 @@
 <script>
 import axios from "axios";
 import ActionCable from "actioncable";
+import Vue2Filters from "vue2-filters";
 
 export default {
+  mixins: [Vue2Filters.mixin],
+
   data: function() {
     return {
+      searchFilter: "",
       users: [],
       messages: [],
       newMessageBody: "",

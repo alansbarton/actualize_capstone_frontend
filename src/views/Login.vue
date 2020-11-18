@@ -27,7 +27,7 @@
                       <input type="password" placeholder="Password" class="single-field" v-model="password" />
                     </div>
                     <div class="col-12 col-sm-auto">
-                      <input type="submit" class="btn btn-primary" value="Submit" v-on:click="submitLogin()" />
+                      <button class="login-btn" v-on:click="submitLogin()">Login</button>
                     </div>
                   </div>
                 </div>
@@ -52,7 +52,7 @@
                     <form class="signup-inner--form" v-on:submit.prevent="submitSignup()">
                       <div class="row">
                         <div class="col-12">
-                          <input type="email" class="single-field" placeholder="Email" v-model="email" />
+                          <input type="email" class="single-field" placeholder="Email" v-model="emailCreate" />
                         </div>
                         <div class="col-md-6">
                           <input type="text" class="single-field" placeholder="First Name" v-model="firstName" />
@@ -144,7 +144,7 @@ export default {
     submitSignup: function() {
       var params = {
         name: this.name,
-        email: this.email,
+        email: this.emailCreate,
         password: this.passwordCreate,
         password_confirmation: this.passwordConfirmation,
       };

@@ -1061,8 +1061,15 @@ import axios from "axios";
 export default {
   data: function() {
     return {
+      selectedUser: {
+        id: "",
+        messages: [],
+        images: [{}, {}],
+      },
       climbing_style: [],
-      user: [],
+      user: {
+        current_user_images: [{}, {}],
+      },
     };
   },
   created: function() {
